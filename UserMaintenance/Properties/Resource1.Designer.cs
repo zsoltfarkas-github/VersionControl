@@ -70,7 +70,7 @@ namespace UserMaintenance.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Keresztnév.
+        ///   Looks up a localized string similar to Utónév.
         /// </summary>
         public static string FirstName {
             get {
