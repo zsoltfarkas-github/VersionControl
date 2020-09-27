@@ -32,6 +32,7 @@
             this.txtFullName = new System.Windows.Forms.TextBox();
             this.lblFullName = new System.Windows.Forms.Label();
             this.btnAdd = new System.Windows.Forms.Button();
+            this.btnsavefile = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listUsers
@@ -69,11 +70,22 @@
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
+            // btnsavefile
+            // 
+            this.btnsavefile.Location = new System.Drawing.Point(269, 179);
+            this.btnsavefile.Name = "btnsavefile";
+            this.btnsavefile.Size = new System.Drawing.Size(231, 36);
+            this.btnsavefile.TabIndex = 4;
+            this.btnsavefile.Text = "button1";
+            this.btnsavefile.UseVisualStyleBackColor = true;
+            this.btnsavefile.Click += new System.EventHandler(this.btnsavefile_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnsavefile);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.lblFullName);
             this.Controls.Add(this.txtFullName);
@@ -91,6 +103,7 @@
         private System.Windows.Forms.TextBox txtFullName;
         private System.Windows.Forms.Label lblFullName;
         private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button btnsavefile;
     }
 }
 
