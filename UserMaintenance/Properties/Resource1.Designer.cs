@@ -70,20 +70,11 @@ namespace UserMaintenance.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Keresztnév.
+        ///   Looks up a localized string similar to Teljes_Név.
         /// </summary>
-        public static string FirstName {
+        public static string FullName {
             get {
-                return ResourceManager.GetString("FirstName", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Vezetéknév.
-        /// </summary>
-        public static string LastName {
-            get {
-                return ResourceManager.GetString("LastName", resourceCulture);
+                return ResourceManager.GetString("FullName", resourceCulture);
             }
         }
     }
