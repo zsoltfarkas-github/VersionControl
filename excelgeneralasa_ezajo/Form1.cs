@@ -108,7 +108,7 @@ namespace excelgeneralasa_ezajo
 
             for (int i = 0; i < 9999; i++) // nem tudtam a hossz-t 
             {
-                xlSheet.Cells[9, i+2] = "=G"+"[i+2]"+"*H"+"[i+2]";
+                xlSheet.Cells[9, i+2] = "=G"+"[i+2]"+"*H"+"[i+2]"; //fejben leszámoltam az oszlopok-at így lettek betűk! 
             }
 
             Excel.Range headerRange = xlSheet.get_Range(GetCell(1, 1), GetCell(1, headers.Length));
