@@ -106,6 +106,21 @@ namespace excelgeneralasa_ezajo
              GetCell(2, 1),
              GetCell(1 + values.GetLength(0), values.GetLength(1))).Value2 = values;
 
+            for (int i = 0; i < 9999; i++) // nem tudtam a hossz-t 
+            {
+                xlSheet.Cells[9, i+2] = "=G"+"[i+2]"+"*H"+"[i+2]";
+            }
+
+            Excel.Range headerRange = xlSheet.get_Range(GetCell(1, 1), GetCell(1, headers.Length));
+            headerRange.Font.Bold = true;
+            headerRange.VerticalAlignment = Excel.XlVAlign.xlVAlignCenter;
+            headerRange.HorizontalAlignment = Excel.XlHAlign.xlHAlignCenter;
+            headerRange.EntireColumn.AutoFit();
+            headerRange.RowHeight = 40;
+            headerRange.Interior.Color = Color.LightBlue;
+            headerRange.BorderAround2(Excel.XlLineStyle.xlContinuous, Excel.XlBorderWeight.xlThick);
+
+            //range változós rész nem volt teljesen tiszta 
         }
         private string GetCell(int x, int y)
         {
