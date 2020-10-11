@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -69,6 +70,25 @@ namespace var_negyedik_feladat_jo
                 value += (decimal)last.Price * item.Volume;
             }
             return value;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog sfd = new SaveFileDialog();
+
+            if (sfd.ShowDialog() == DialogResult.OK)
+            {
+                StreamWriter sw = new StreamWriter(sfd.FileName);
+
+                sw.Write("Időszak");
+                sw.Write("");
+                sw.WriteLine("Nyereség");
+
+                sw.Close();
+            }
+
+            sfd.Dispose();
+
         }
     }
 }
