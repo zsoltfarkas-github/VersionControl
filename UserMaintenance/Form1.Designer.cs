@@ -28,13 +28,82 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.listUsers = new System.Windows.Forms.ListBox();
+            this.txtFullName = new System.Windows.Forms.TextBox();
+            this.lblFullName = new System.Windows.Forms.Label();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.btnsavefile = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // listUsers
+            // 
+            this.listUsers.FormattingEnabled = true;
+            this.listUsers.ItemHeight = 15;
+            this.listUsers.Location = new System.Drawing.Point(12, 12);
+            this.listUsers.Name = "listUsers";
+            this.listUsers.Size = new System.Drawing.Size(223, 244);
+            this.listUsers.TabIndex = 0;
+            // 
+            // txtFullName
+            // 
+            this.txtFullName.Location = new System.Drawing.Point(352, 58);
+            this.txtFullName.Name = "txtFullName";
+            this.txtFullName.Size = new System.Drawing.Size(148, 23);
+            this.txtFullName.TabIndex = 1;
+            // 
+            // lblFullName
+            // 
+            this.lblFullName.AutoSize = true;
+            this.lblFullName.Location = new System.Drawing.Point(269, 61);
+            this.lblFullName.Name = "lblFullName";
+            this.lblFullName.Size = new System.Drawing.Size(38, 15);
+            this.lblFullName.TabIndex = 2;
+            this.lblFullName.Text = "label1";
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.Location = new System.Drawing.Point(269, 100);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(231, 30);
+            this.btnAdd.TabIndex = 3;
+            this.btnAdd.Text = "button1";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
+            // btnsavefile
+            // 
+            this.btnsavefile.Location = new System.Drawing.Point(269, 179);
+            this.btnsavefile.Name = "btnsavefile";
+            this.btnsavefile.Size = new System.Drawing.Size(231, 36);
+            this.btnsavefile.TabIndex = 4;
+            this.btnsavefile.Text = "button1";
+            this.btnsavefile.UseVisualStyleBackColor = true;
+            this.btnsavefile.Click += new System.EventHandler(this.btnsavefile_Click);
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnsavefile);
+            this.Controls.Add(this.btnAdd);
+            this.Controls.Add(this.lblFullName);
+            this.Controls.Add(this.txtFullName);
+            this.Controls.Add(this.listUsers);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.ListBox listUsers;
+        private System.Windows.Forms.TextBox txtFullName;
+        private System.Windows.Forms.Label lblFullName;
+        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button btnsavefile;
     }
 }
 
