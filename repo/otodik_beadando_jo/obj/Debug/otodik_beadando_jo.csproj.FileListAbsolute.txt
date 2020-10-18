@@ -1,0 +1,10 @@
+C:\Egyetem\Az egész 4. év\4. év 1. félév\Informatikai rendszerek fejlesztése\Beadandók\Ötödik\repo\otodik_beadando_jo\obj\Debug\otodik_beadando_jo.csprojAssemblyReference.cache
+C:\Egyetem\Az egész 4. év\4. év 1. félév\Informatikai rendszerek fejlesztése\Beadandók\Ötödik\repo\otodik_beadando_jo\obj\Debug\otodik_beadando_jo.Form1.resources
+C:\Egyetem\Az egész 4. év\4. év 1. félév\Informatikai rendszerek fejlesztése\Beadandók\Ötödik\repo\otodik_beadando_jo\obj\Debug\otodik_beadando_jo.Properties.Resources.resources
+C:\Egyetem\Az egész 4. év\4. év 1. félév\Informatikai rendszerek fejlesztése\Beadandók\Ötödik\repo\otodik_beadando_jo\obj\Debug\otodik_beadando_jo.csproj.GenerateResource.cache
+C:\Egyetem\Az egész 4. év\4. év 1. félév\Informatikai rendszerek fejlesztése\Beadandók\Ötödik\repo\otodik_beadando_jo\obj\Debug\otodik_beadando_jo.csproj.CoreCompileInputs.cache
+C:\Egyetem\Az egész 4. év\4. év 1. félév\Informatikai rendszerek fejlesztése\Beadandók\Ötödik\repo\otodik_beadando_jo\bin\Debug\otodik_beadando_jo.exe.config
+C:\Egyetem\Az egész 4. év\4. év 1. félév\Informatikai rendszerek fejlesztése\Beadandók\Ötödik\repo\otodik_beadando_jo\bin\Debug\otodik_beadando_jo.exe
+C:\Egyetem\Az egész 4. év\4. év 1. félév\Informatikai rendszerek fejlesztése\Beadandók\Ötödik\repo\otodik_beadando_jo\bin\Debug\otodik_beadando_jo.pdb
+C:\Egyetem\Az egész 4. év\4. év 1. félév\Informatikai rendszerek fejlesztése\Beadandók\Ötödik\repo\otodik_beadando_jo\obj\Debug\otodik_beadando_jo.exe
+C:\Egyetem\Az egész 4. év\4. év 1. félév\Informatikai rendszerek fejlesztése\Beadandók\Ötödik\repo\otodik_beadando_jo\obj\Debug\otodik_beadando_jo.pdb
