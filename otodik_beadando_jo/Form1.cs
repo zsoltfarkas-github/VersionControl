@@ -52,8 +52,7 @@ namespace otodik_beadando_jo
             };
 
             var response = mnbService.GetExchangeRates(request);
-
-            var result = response.GetExchangeRatesResult;
+            result = response.GetExchangeRatesResult;
 
         }
 
