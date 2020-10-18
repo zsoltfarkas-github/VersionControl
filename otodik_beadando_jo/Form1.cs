@@ -20,28 +20,41 @@ namespace otodik_beadando_jo
     {
 
         BindingList<RateData> rates = new BindingList<RateData>();
+        public string result;
 
         public Form1()
         {
             InitializeComponent();
 
-            dataGridView1.DataSource = rates;
+            refreshdata();
+        }
 
+        private void refreshdata()
+        {
+            rates.Clear();
+
+            webszolg();
+            feldolgozas();
+            adatokmegjelenitese();
+
+            dataGridView1.DataSource = rates;
+        }
+
+        private void webszolg()
+        {
             var mnbService = new MNBArfolyamServiceSoapClient();
 
             var request = new GetExchangeRatesRequestBody()
             {
-                currencyNames = "EUR",
-                startDate = "2020-01-01",
-                endDate = "2020-06-30"
+                currencyNames = comboBox1.SelectedItem.ToString(),
+                startDate = dateTimePicker1.Value.ToString(),
+                endDate = dateTimePicker2.Value.ToString()
             };
 
             var response = mnbService.GetExchangeRates(request);
 
             var result = response.GetExchangeRatesResult;
 
-            feldolgozas();
-            adatokmegjelenitese();
         }
 
         private void feldolgozas()
@@ -85,5 +98,19 @@ namespace otodik_beadando_jo
             chartArea.AxisY.IsStartedFromZero = false;
         }
 
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+            refreshdata();
+        }
+
+        private void dateTimePicker2_ValueChanged(object sender, EventArgs e)
+        {
+            refreshdata();
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            refreshdata();
+        }
     }
 }
