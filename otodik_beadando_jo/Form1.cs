@@ -1,4 +1,5 @@
-﻿using otodik_beadando_jo.MnbServiceReference;
+﻿using otodik_beadando_jo.Entities;
+using otodik_beadando_jo.MnbServiceReference;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,9 +14,14 @@ namespace otodik_beadando_jo
 {
     public partial class Form1 : Form
     {
+
+        BindingList<RateData> rates = new BindingList<RateData>();
+
         public Form1()
         {
             InitializeComponent();
+
+            dataGridView1.DataSource = rates;
 
             var mnbService = new MNBArfolyamServiceSoapClient();
 
