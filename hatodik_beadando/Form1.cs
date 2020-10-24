@@ -29,6 +29,11 @@ namespace hatodik_beadando
             BirthProbabilities = GetBirthProbabilities(@"C:\Windows\Temp\születés.csv");
             DeathProbabilities = GetDeathProbabilities(@"C:\Windows\Temp\halál.csv");
 
+            
+        }
+
+        private void szimulacio()
+        {
             for (int year = 2005; year <= 2024; year++)
             {
                 for (int i = 0; i < Population.Count; i++)
@@ -143,6 +148,11 @@ namespace hatodik_beadando
             }
 
             return deathProbabilities;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            szimulacio();
         }
     }
 }
