@@ -21,11 +21,13 @@ namespace hatodik_beadando
 
         Random rng = new Random(1234);
 
+        Person person = new Person();
+
         public Form1()
         {
             InitializeComponent();
 
-            Population = GetPopulation(@"C:\Windows\Temp\nép.csv");
+            Population = GetPopulation(textBox1.Text);
             BirthProbabilities = GetBirthProbabilities(@"C:\Windows\Temp\születés.csv");
             DeathProbabilities = GetDeathProbabilities(@"C:\Windows\Temp\halál.csv");
 
@@ -34,7 +36,7 @@ namespace hatodik_beadando
 
         private void szimulacio()
         {
-            for (int year = 2005; year <= 2024; year++)
+            for (int year = 2005; year <= numericUpDown1.Value; year++)
             {
                 for (int i = 0; i < Population.Count; i++)
                 {
@@ -153,6 +155,18 @@ namespace hatodik_beadando
         private void button1_Click(object sender, EventArgs e)
         {
             szimulacio();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog ofd = new OpenFileDialog();
+
+            ofd.ShowDialog();
+
+            if (ofd.ShowDialog() == DialogResult.OK)
+            {
+                textBox1.Text = @"C:\Windows\Temp\nép.csv";
+            }
         }
     }
 }
