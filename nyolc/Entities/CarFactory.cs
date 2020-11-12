@@ -12,7 +12,7 @@ namespace nyolc.Entities
     {
         public Toy CreateNew()
         {
-            return new Toy();
+            return new Car();
         }
     }
 }
