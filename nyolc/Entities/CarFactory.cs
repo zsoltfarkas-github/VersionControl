@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace nyolc.Entities
 {
-    public class BallFactory : IToyFactory
+    public class CarFactory : IToyFactory
     {
         public Toy CreateNew()
         {
