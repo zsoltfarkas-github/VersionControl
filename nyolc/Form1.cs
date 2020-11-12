@@ -70,7 +70,10 @@ namespace nyolc
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Factory = new BallFactory();
+                Factory = new BallFactory
+                {
+                    BallColor = bntColor.BackColor
+                };
         }
 
         private void DisplayNext()
@@ -83,7 +86,7 @@ namespace nyolc
             Controls.Add(_nextToy);
         }
 
-        private void btnColor_Click(object sender, EventArgs e)
+        private void bntColor_Click(object sender, EventArgs e)
         {
             var button = (Button)sender;
             var colorPicker = new ColorDialog();
