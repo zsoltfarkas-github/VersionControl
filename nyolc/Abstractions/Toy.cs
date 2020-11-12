@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing;
 
-namespace nyolc.Entities
+namespace nyolc.Abstraction
 {
-    public class Toy : Label
+    public abstract class Toy : Label
     {
         public Toy()
         {
